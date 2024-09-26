@@ -1,0 +1,5 @@
+bootstrap.min.css
+fontawesome.css
+templatemo-style.css
+owl.css
+lightbox.css
