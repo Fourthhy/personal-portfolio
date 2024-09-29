@@ -680,8 +680,6 @@ function App() {
   </footer>
   {/* JAVASCRIPT FILES */}
 </>
-
   )
 }
-
 export default App
