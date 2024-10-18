@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resumeGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 430px);
+    margin: 10px;
+    gap: 5px;
+    font-size: 0.95rem;
+}
+
+.resumeDiv {
+    color: hsla(0, 0%, 0%, 0.842);
+    font-family: "Roboto Mono", monospace;   
+}
+
+.resumeHeader {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.resumeTechHeader {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.resumeTechButtons {
+    position: absolute;
+    font-size: 1.3rem;
+    display: inline;
+}
+
+.hr {
+    width: 700px;
+    background-color: #3CBDBD;
+    height: 2px;
+    border: none;
+}
+
+.hr-div {
+    display: flex;
+    justify-content: center
+}

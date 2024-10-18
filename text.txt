@@ -1,0 +1,29 @@
+import React, { useState, useEffect } from 'react';
+
+function LetterByLetter() {
+  const [text, setText] = useState('The brown fox jumps over the lazy dog');
+  const [displayedText, setDisplayedText] = useState('');
+
+  useEffect(() => {
+    let intervalId;
+    const displayLetters = () => {
+      if (displayedText.length < text.length) {
+        setDisplayedText(displayedText + text[displayedText.length]);
+      } else {
+        clearInterval(intervalId);
+      }
+    };
+
+    intervalId = setInterval(displayLetters, 100); // Adjust the interval as needed
+
+    return () => clearInterval(intervalId);
+  }, [text]);
+
+  return (
+    <div>
+      <p>{displayedText}</p>
+    </div>
+  );
+}
+
+export default LetterByLetter;
