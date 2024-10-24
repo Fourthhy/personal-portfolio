@@ -1,43 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './css/cardContainer.css';
+import Navigation from './components/Navigation.jsx';
+import DisplayComponent from './components/DisplayComponent.jsx';
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [ activePage, setActivePage] = useState('Home');
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          increment
-        </button>
-        <button 
-          onClick={() => setCount((count) => count - 1)}
-          style={{
-            'paddingLeft': '5px'
-          }}
-          >
-          decrement
-        </button>
-        <p>
-          count is {count}
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    function handlePageChange(page) {
+        setActivePage(page);
+    }
+    return (
+        <>
+            <div className="cardBackground">
+                    <Navigation activePage={activePage} handlePageChange={handlePageChange}/>
+                <div className="cardContent">
+                    <DisplayComponent activePage={activePage}/>
+                </div>
+            </div>
+        </>
+    )
 }
 
-export default App
+export default App;

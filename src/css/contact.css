@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactDiv {
+    font-family: "Roboto Mono", monospace;
+    color: hsla(0, 0%, 0%, 0.863);
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 350px 50px 350px;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.contactInfo div{
+    border: 1px solid hsla(0, 0%, 100%, 0.26);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.250);
+    backdrop-filter: blur(8px); 
+    border-radius: 10px
+}
+
+.lineCenter {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
+.verticalLine {
+    width: 2px;
+    height: 300px;
+    background-color: #3CBDBD;
+} 
+
+.contactForm {
+    display: grid;
+    grid-template-rows: 50px 50px 100px 50px;
+    grid-template-columns: 300px;
+}
+
+.contactForm div{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.521); 
+    backdrop-filter: blur(10px); 
+}

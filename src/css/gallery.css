@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galleryContainer {
+    width: 900px;
+    height: 500px;
+}
+
+.galleryHeader {
+    font-family: "Roboto Mono", monospace;
+    color: hsla(0, 0%, 0%, 0.863);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 200px 630px;
+    grid-template-rows: auto;
+    place-content: center;
+}
+
+.text {
+    padding: 5px;
+}
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    place-content: center;
+    /* border: 1px solid white; */
+}
+
+.galleryButtons {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.galleryIMG {
+    background-size: cover;
+    background-repeat: no-repeat;   
+}

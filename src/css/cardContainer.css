@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+.cardBackground {
+    background-image: url('/image/Header-Background.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.cardContent {
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    
+    height: 540px;
+    width: 940px;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.250);
+    backdrop-filter: blur(10px); 
+    border-radius: 25px;
+}
