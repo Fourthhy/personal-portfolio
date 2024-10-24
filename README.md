@@ -8,7 +8,7 @@ You can access the live version of my portfolio website using the link below:
 
 ### This website has seven parts
 - Home <br>
-\bThe landing page of the website.
+&nbsp;The landing page of the website.
 - Biography
 It features a small introduction about myself.
 - Projects
